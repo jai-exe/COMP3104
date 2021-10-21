@@ -4,7 +4,7 @@ node_js:
 
 branches:
   only:
-    - master
+    - main
 
 cache:
   directories:
@@ -12,8 +12,7 @@ cache:
 
 install:
   - npm install
-  - npm i -S react-scripts
-  - npm install yarn
+  - npm install -g yarn
 
 script:
   #- yarn lint
@@ -26,4 +25,4 @@ deploy:
   github_token: $github_token
   local_dir: build
   on:
-    branch: master
+    branch: main
