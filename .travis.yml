@@ -13,7 +13,7 @@ cache:
 install:
   - npm install
   - npm i -S react-scripts
-  - npm install -g yarn
+  - npm install yarn
 
 script:
   #- yarn lint
